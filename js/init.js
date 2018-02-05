@@ -114,7 +114,12 @@
 
     $(document).on('click', '.popup-modal-dismiss', function (e) {
     		e.preventDefault();
-    		$.magnificPopup.close();
+            $.magnificPopup.close();
+            startGame("size", "gameOfLife", 500);
+    });
+
+    $('#size').on('click', function(){
+        startGame('modal-06', 'modalGameOfLife', 1000);
     });
 
 

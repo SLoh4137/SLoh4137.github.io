@@ -1,21 +1,13 @@
 var board = {};
-var addEvent = function(object, type, callback) {
-    if (object == null || typeof(object) == 'undefined') return;
-    if (object.addEventListener) {
-        object.addEventListener(type, callback, false);
-    } else if (object.attachEvent) {
-        object.attachEvent("on" + type, callback);
-    } else {
-        object["on"+type] = callback;
-    }
-};
 
-onload = function startGame() {
-	var width = document.getElementById("size").clientWidth,
-		height = document.getElementById("size").clientWidth,
+onload = startGame("size", "gameOfLife", 500);
+
+function startGame(size, game, numPoints) {
+	var width = document.getElementById(size).clientWidth,
+		height = document.getElementById(size).clientWidth,
         squareSize = 10,
         
-		canvas = document.getElementById("gameOfLife"),
+		canvas = document.getElementById(game),
 		boundingRect = {},
 		context = {};
 		
@@ -99,11 +91,11 @@ onload = function startGame() {
 	}
 	
     setInterval(updateGameArea, 1000);
-    board.createPoints(500);
+    board.createPoints(numPoints);
 
     window.addEventListener('resize', function(event){
-        startGame();
-      });
+        startGame("size", "gameOfLife", 500);
+    });
 }
 
 function updateGameArea() {

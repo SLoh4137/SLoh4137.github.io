@@ -26,7 +26,6 @@
    <!-- Script
    ================================================== -->
     <script src="js/modernizr.js"></script>
-    <script src="js/gameOfLife.js"></script>
 
    <!-- Favicons
 	================================================== -->
@@ -330,7 +329,7 @@
 
          <div class="twelve columns collapsed">
 
-            <h1>Check Out Some of My Works.</h1>
+            <h1>Check Out Some of My Projects.</h1>
 
             <!-- portfolio-wrapper -->
             <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
@@ -470,9 +469,14 @@
 		      <img class="scale-with-grid UrbanWordCompletion" src="images/portfolio/transparent.png" alt="" />
 
 		      <div class="description-box">
-			      <h4>Console</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Web Development</span>
+			      <h4>UrbanWordCompletion</h4>
+                  <p>UrbanWordCompletion looks up the word given by the user and tries to find words similar to it on Urban Dictionary's popular page. 
+                    The program creates several threads to parse the html page and calculate the similarity between parsed words. 
+                    This program uses the Levenshtein algorithm provided by RosettaCode at http://rosettacode.org/wiki/Levenshtein_distance#Java</p>
+
+                  <p>Developed for HackPrinceton using Java</p>
+                  <p> <a href="https://github.com/SLoh4137/UrbanWordCompletion"> <i class="fa fa-github"></i> Click here to go to the GitHub repository </a> </p>
+               <span class="categories"><i class="fa fa-tag"></i>Hackathon, Java, Threads</span>
 		      </div>
 
             <div class="link-box">
@@ -484,12 +488,14 @@
 
          <div id="modal-03" class="popup-modal mfp-hide">
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-judah.jpg" alt="" />
+		      <img class="scale-with-grid SudokuSolver" src="images/portfolio/transparent.png" alt="" />
 
 		      <div class="description-box">
-			      <h4>Judah</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding</span>
+			      <h4>SudokuSolver</h4>
+                  <p>A sudoku solving tool. Can input values from a written Sudoku, such as those from a newspaper, to complete digitally.</p>
+                  <p> <a href="https://github.com/SLoh4137/Sudoku"> <i class="fa fa-github"></i> Click here to go to the GitHub repository </a> </p>
+                  
+               <span class="categories"><i class="fa fa-tag"></i>Personal Project, Java, Threads</span>
 		      </div>
 
             <div class="link-box">
@@ -501,12 +507,16 @@
 
          <div id="modal-04" class="popup-modal mfp-hide">
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-intothelight.jpg" alt="" />
+		      <img class="scale-with-grid Peppero" src="images/portfolio/transparent.png" alt="" />
 
 		      <div class="description-box">
-			      <h4>Into the Light</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
+			      <h4>Peppero.me</h4>
+			      <p> Peppero.me is a web app that allows you to order a large cheese pizza from every Domino's within a 10-mile radius with the click of a button. Inspired by MIT's pizza button. 
+                      My suitemates and I worked together on this app for the Bitcamp Hacakthon. We decided on the name Peppero.me because it sounds exactly like pepperoni. We thought it was hilarious.
+                  </p>
+
+                  <p> <a href="https://github.com/aalbertjay/peppero-me"> <i class="fa fa-github"></i> Click here to go to the GitHub repository </a> </p>
+               <span class="categories"><i class="fa fa-tag"></i>Hackathon, Pizza, JavaScript</span>
 		      </div>
 
             <div class="link-box">
@@ -518,12 +528,16 @@
 
          <div id="modal-05" class="popup-modal mfp-hide">
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-farmerboy.jpg" alt="" />
+		      <img class="scale-with-grid" src="images/portfolio/MBHSGo.jpg" alt="" />
 
 		      <div class="description-box">
-			      <h4>Farmer Boy</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
+                    <h4>MBHSGo</h4>
+                    <p> MBHSGo was a high school project for my Software Design class. It's an Android app designed for Montgomery Blair students to keep track of even/odd day scheduling 
+                        and subscriptions to various club events. 
+                    </p>
+  
+                    <p> <a href="https://github.com/SLoh4137/MBHSGo"> <i class="fa fa-github"></i> Click here to go to the GitHub repository </a> </p>
+               <span class="categories"><i class="fa fa-tag"></i>High School, Android</span>
 		      </div>
 
             <div class="link-box">
@@ -535,12 +549,12 @@
 
          <div id="modal-06" class="popup-modal mfp-hide">
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-girl.jpg" alt="" />
+              <canvas id="modalGameOfLife"><img class="scale-with-grid" alt="" src="images/portfolio/transparent.png"></canvas>
 
 		      <div class="description-box">
-			      <h4>Girl</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
+			      <h4>GameOfLife</h4>
+			      <p> A JavaScript implementation of Conway's Game of Life. I found an article one day detailing </p>
+               <span class="categories"><i class="fa fa-tag"></i>Personal Project, JavaScript</span>
 		      </div>
 
             <div class="link-box">
@@ -549,40 +563,6 @@
             </div>
 
 	      </div><!-- modal-06 End -->
-
-         <div id="modal-07" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-origami.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Origami</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Illustration</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-07 End -->
-
-         <div id="modal-08" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-retrocam.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Retrocam</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-01 End -->
 
 
       </div> <!-- row End -->
@@ -783,6 +763,7 @@
    <script src="js/jquery.fittext.js"></script>
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
+   <script src="js/gameOfLife.js"></script>
 
 </body>
 
